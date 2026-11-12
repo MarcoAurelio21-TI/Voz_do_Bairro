@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;500;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="./styles/style.css?v=20261111">
 </head>
@@ -19,7 +19,7 @@
         <header class="topo">
             <div class="logo-container">
                 <div class="brasao">
-                    <img src="./img/logo.png" alt="Brasão Voz do Bairro" onerror="this.style.display='none'">
+                    <img src="./img/logo.png" alt="Brasão Voz da Quebrada" onerror="this.style.display='none'">
                 </div>
                 <div class="logo-texto">
                     <h1>Voz do Bairro</h1>
@@ -39,9 +39,9 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="./index.html" class="menu-link active">
-                        <span class="text-front">Início</span>
-                        <span class="text-back">Início</span>
+                    <a href="#secao-mural" class="menu-link">
+                        <span class="text-front">Mural</span>
+                        <span class="text-back">Mural</span>
                     </a>
                 </li>
                 <li>
@@ -51,21 +51,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./html/ocorrencias.html" class="menu-link">
-                        <span class="text-front">Ocorrências</span>
-                        <span class="text-back">Ocorrências</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./html/eventos.html" class="menu-link">
-                        <span class="text-front">Eventos</span>
-                        <span class="text-back">Eventos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./html/classificados.html" class="menu-link">
-                        <span class="text-front">Classificados</span>
-                        <span class="text-back">Classificados</span>
+                    <a href="#categorias" class="menu-link">
+                        <span class="text-front">Categorias Abordadas</span>
+                        <span class="text-back">Categorias Abordadas</span>
                     </a>
                 </li>
                 <li>
@@ -85,30 +73,31 @@
 
         <div class="linha-preta"></div>
 
-        <!-- ===================== HERO ===================== -->
+            <!-- ===================== HERO ===================== -->
         <main class="conteudo-principal">
 
             <div class="coluna-texto">
                 <h2 class="titulo-principal anim-entrada">
-                    Tudo que acontece no<br>
-                    <span id="nome-bairro-dinamico">nosso bairro</span>,<br>
+                    Tudo que acontece na<br>
+                    <span id="nome-bairro-dinamico">nossa quebrada</span>,<br>
                     <span class="texto-vermelho">pregado no mural!</span>
                 </h2>
 
                 <p class="descricao anim-entrada delay-1">
-                    Notícias do bairro, animais desaparecidos, SOS Mulheres, assaltos e denúncias.
+                    Notícias da comunidade, animais desaparecidos, SOS Mulheres, assaltos e denúncias.
                     Qualquer morador registra — com ou sem cadastro — e acompanha o que já foi
                     resolvido, o que segue em aberto e o que ficou pendente.
                 </p>
 
                 <div class="botoes-acao anim-entrada delay-2">
-                    <a href="./html/ocorrencias.html" class="btn-abrir-mural">Abrir o Mural &rarr;</a>
-                    <a href="./html/nova-ocorrencia.html" class="btn-registrar-mural">
+                    <a href="./html/mural.html" class="btn-abrir-mural">Abrir o Mural &rarr;</a>
+                    
+                    <!-- Botão de Emergência Policial (190) -->
+                    <a href="tel:190" class="btn-policia">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 11l18-5v12L3 14v-3z"></path>
-                            <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 1, 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                         </svg>
-                        Registrar Ocorrência
+                        Emergência · 190
                     </a>
                 </div>
 
@@ -135,8 +124,8 @@
             <div class="coluna-imagem anim-entrada-imagem">
                 <figure class="polaroid" data-tilt>
                     <img src="./img/img10t.png"
-                         alt="Megafone e notícias do bairro"
-                         onerror="this.src='https://via.placeholder.com/420x500/f0f0f0/666?text=Imagem+do+Megafone'">
+                        alt="Megafone e notícias da quebrada"
+                        onerror="this.src='https://via.placeholder.com/420x500/f0f0f0/666?text=Imagem+do+Megafone'">
                     <figcaption class="polaroid-legenda">a voz da comunidade em tempo real</figcaption>
                 </figure>
             </div>
@@ -146,52 +135,52 @@
         <div class="linha-preta" style="margin-top: 40px;"></div>
 
         <!-- ===================== CATEGORIAS ===================== -->
-        <section class="secao-categorias">
+        <section class="secao-categorias" id="categorias">
             <h2 class="titulo-secao anim-entrada">Categorias do Mural</h2>
 
             <div class="grid-categorias">
-                <a href="./html/ocorrencias.html?categoria=animais" class="card-categoria anim-entrada delay-1">
+                <div class="card-categoria anim-entrada delay-1">
                     <span class="card-categoria-icone">🐾</span>
                     <h3>Animais</h3>
                     <p>Desaparecidos, encontrados e adoção.</p>
-                </a>
+                </div>
 
-                <a href="./html/ocorrencias.html?categoria=seguranca" class="card-categoria anim-entrada delay-2">
+                <div class="card-categoria anim-entrada delay-2">
                     <span class="card-categoria-icone">🛡️</span>
                     <h3>Segurança</h3>
                     <p>Assaltos, iluminação e rondas.</p>
-                </a>
+                </div>
 
-                <a href="./html/ocorrencias.html?categoria=infraestrutura" class="card-categoria anim-entrada delay-3">
+                <div class="card-categoria anim-entrada delay-3">
                     <span class="card-categoria-icone">🛠️</span>
                     <h3>Infraestrutura</h3>
                     <p>Buracos, esgoto e calçadas.</p>
-                </a>
+                </div>
 
-                <a href="./html/ocorrencias.html?categoria=sos-mulher" class="card-categoria anim-entrada delay-4">
+                <div class="card-categoria anim-entrada delay-4">
                     <span class="card-categoria-icone">🆘</span>
                     <h3>SOS Mulher</h3>
                     <p>Apoio e denúncias de violência.</p>
-                </a>
+                </div>
 
-                <a href="./html/ocorrencias.html?categoria=limpeza" class="card-categoria anim-entrada delay-1">
+                <div class="card-categoria anim-entrada delay-1">
                     <span class="card-categoria-icone">🧹</span>
                     <h3>Limpeza</h3>
                     <p>Lixo acumulado e terrenos.</p>
-                </a>
+                </div>
 
-                <a href="./html/ocorrencias.html?categoria=outros" class="card-categoria anim-entrada delay-2">
+                <div class="card-categoria anim-entrada delay-2">
                     <span class="card-categoria-icone">📌</span>
                     <h3>Outros</h3>
                     <p>Tudo o que não se encaixa acima.</p>
-                </a>
+                </div>
             </div>
         </section>
 
         <div class="linha-preta" style="margin-top: 40px;"></div>
 
         <!-- ===================== MURAL — ÚLTIMAS ===================== -->
-        <section class="secao-mural">
+        <section class="secao-mural" id="secao-mural">
             <h2 class="titulo-secao anim-entrada">Últimas no Mural</h2>
 
             <div class="feed-mural" id="mural-recente">
@@ -231,12 +220,12 @@
 
         <!-- ===================== SOBRE ===================== -->
         <section id="sobre" class="secao-sobre">
-            <h2 class="titulo-secao anim-entrada">A Força de um Bairro Unido</h2>
+            <h2 class="titulo-secao anim-entrada">A Força de uma Quebrada Unida</h2>
 
             <div class="grid-sobre">
                 <div class="card-sobre anim-entrada delay-1">
                     <h3><span class="texto-vermelho">Nossa</span> História</h3>
-                    <p>O <strong>Voz do Bairro</strong> nasceu da observação simples de que, quando os vizinhos se comunicam, os problemas são resolvidos mais rápido. O projeto começou como um mural de papel na padaria da esquina e, com o tempo, evoluiu para este espaço digital. Percebemos que muitas denúncias, animais perdidos e melhorias necessárias ficavam esquecidos por falta de um canal centralizado. Hoje, somos a ponte entre o morador e a solução.</p>
+                    <p>O <strong>Voz da Quebrada</strong> nasceu da observação simples de que, quando os vizinhos se comunicam, os problemas são resolvidos mais rápido. O projeto começou como um mural físico e, com o tempo, evoluiu para este espaço digital. Percebemos que muitas denúncias e melhorias necessárias ficavam esquecidas por falta de um canal centralizado. Hoje, somos a ponte entre o morador e a solução.</p>
                 </div>
 
                 <div class="card-sobre anim-entrada delay-2">
@@ -251,8 +240,8 @@
 
                 <div class="card-sobre anim-entrada delay-3">
                     <h3><span class="texto-vermelho">O que</span> Desejamos</h3>
-                    <p><strong>Missão:</strong> Dar voz a quem vive a realidade do bairro. Transformar reclamações solitárias em registros organizados que gerem ação.</p>
-                    <p><strong>Visão:</strong> Ser o principal canal de diálogo, onde a união dos moradores transforma ruas esburacadas em vias seguras e áreas abandonadas em espaços de convivência.</p>
+                    <p><strong>Missão:</strong> Dar voz a quem vive a realidade da quebrada. Transformar reclamações em registros organizados que gerem ação.</p>
+                    <p><strong>Visão:</strong> Ser o principal canal de diálogo, onde a união transforma ruas e áreas esquecidas em espaços seguros.</p>
                 </div>
             </div>
         </section>
@@ -281,7 +270,7 @@
                 </figure>
 
                 <figure class="polaroid-equipe anim-entrada delay-3" data-tilt>
-                    <img src="./img/equipe3.jpg" alt="Foto do integrante 3" onerror="this.src='https://via.placeholder.com/220x220/f0f0f0/666?text=Foto'">
+                    <img src="./img/equipe3.jpg" alt="FotoO do integrante 3" onerror="this.src='https://via.placeholder.com/220x220/f0f0f0/666?text=Foto'">
                     <figcaption>
                         <strong>Nome Sobrenome</strong>
                         <span>Conteúdo &amp; Comunidade</span>
@@ -292,7 +281,7 @@
 
         <!-- ===================== RODAPÉ ===================== -->
         <footer class="rodape-site">
-            <p><strong>Voz do Bairro</strong> &middot; feito pelos moradores, para os moradores.</p>
+            <p><strong>Voz da Quebrada</strong> &middot; feito pelos moradores, para os moradores.</p>
             <nav class="rodape-links">
                 <a href="./html/noticias.html">Notícias</a>
                 <a href="./html/eventos.html">Eventos</a>
